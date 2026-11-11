@@ -36,7 +36,9 @@ function update(){
  // No sequence advance until movement and the registered handoff are complete.
  requested=progress<=.48?1:Math.round(1+238*range(progress,.48,.94));
  if(!reduced)cache.request(requested,direction,rendered||1,{warm:progress>=.10});
- const available=cache.resolve(requested,direction,rendered||1);
+ // Tolerate an older cached loader during a static-hosting rollout.
+ const exact=typeof cache.resolve==='function'?null:cache.get(requested);
+ const available=typeof cache.resolve==='function'?cache.resolve(requested,direction,rendered||1):(exact?{frame:requested,bitmap:exact}:null);
  if(available&&available.frame!==rendered){ctx.drawImage(available.bitmap,0,0,1280,720);rendered=available.frame;cache.displayed=rendered;}
  // On reversing out of the pour, require frame 1 before showing the cutout.
  const registered=rendered===1;
@@ -55,7 +57,7 @@ function update(){
  continuation?.update(cinemaProgress,g,rendered);
  window.cup2eatHero.state={progress,requested,rendered,cache:cache.frames.size,peak:cache.peak,inflight:cache.loading.size,direction,geometry:g,canvasOpacity,cupOpacity,failed:[...cache.failed]};
 }
-window.cup2eatHero={state:{},ready:false,performance:()=>cache.snapshot(),phases:{movement:[0,.34],handoff:[.34,.48],pour:[.48,.94],hold:[.94,1]},scrollTo(p){if(trigger)window.scrollTo(0,trigger.start+clamp(p)*Math.max(innerHeight*5,3200));},refresh(){ScrollTrigger.refresh();},};
+window.cup2eatHero={state:{},ready:false,performance:()=>cache.snapshot?.()||{decoded:cache.frames.size,decodedLimit:cache.limit},phases:{movement:[0,.34],handoff:[.34,.48],pour:[.48,.94],hold:[.94,1]},scrollTo(p){if(trigger)window.scrollTo(0,trigger.start+clamp(p)*Math.max(innerHeight*5,3200));},refresh(){ScrollTrigger.refresh();},};
 async function init(){
  if(!window.gsap||!window.ScrollTrigger){notice.textContent='Animation libraries could not load. Static cup preview retained.';return;}
  gsap.registerPlugin(ScrollTrigger);await cup.decode();hero.classList.add('is-enhanced');measure();
