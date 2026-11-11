@@ -1,0 +1,53 @@
+:root{color-scheme:dark;--espresso:#170d08;--cream:#f5e8d5;--caramel:#c79156}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--espresso);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--caramel);outline-offset:8px}
+.hero{position:relative;height:100svh;min-height:480px;overflow:hidden;isolation:isolate}
+.environment,.shade{position:absolute;inset:0;pointer-events:none}
+.environment{background:url('../assets/derived/hero/hero-background-plate.png') center/cover no-repeat}
+.shade{background:linear-gradient(90deg,rgba(17,9,5,.5),transparent 70%)}
+.site-header{position:absolute;inset:0 0 auto;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:32px 4.5vw}
+.wordmark{font:32px Georgia,serif;letter-spacing:-2px;text-decoration:none}
+.site-header nav{font-size:11px;letter-spacing:.04em}
+.site-header nav a{text-decoration:none;display:flex;align-items:center;gap:15px;padding:10px 0}
+.site-header nav a:hover{color:var(--caramel)}
+.source-layer{position:absolute;width:1280px;height:720px;max-width:none;transform-origin:0 0;pointer-events:none;will-change:transform,opacity}
+.sequence{opacity:0;mask-image:linear-gradient(90deg,transparent,#000 16%,#000 91%,transparent),linear-gradient(0deg,transparent,#000 12%,#000 88%,transparent);mask-composite:intersect}
+.cup{z-index:3}
+.copy{position:absolute;left:7vw;top:29%;width:37vw;transform:none;z-index:4;opacity:0;visibility:hidden}
+.eyebrow{font-size:10px;letter-spacing:2.5px;color:var(--caramel);line-height:1.8}
+h1{font:normal clamp(48px,5.8vw,92px)/1.03 Georgia,serif;letter-spacing:-.055em;margin:25px 0}
+.description{font-size:14px;line-height:1.9;color:#ddc9b4}
+.rule{display:block;width:42px;height:1px;background:var(--caramel);margin:32px 0 18px}
+.small{font:italic 18px Georgia,serif;color:var(--caramel)}
+.scroll-cue{position:absolute;left:50%;bottom:55px;transform:translateX(-50%);z-index:4;font-size:9px;letter-spacing:2px;display:flex;align-items:center;gap:12px}
+.scroll-cue span{width:1px;height:30px;background:var(--caramel)}
+.notice{position:absolute;bottom:105px;left:20px;right:20px;z-index:6;text-align:center;font-size:12px}
+.notice:empty{display:none}
+
+[hidden] { display: none !important; }
+.skip-link { position: fixed; top: 12px; left: 12px; z-index: 20; padding: 14px; background: var(--cream); color: var(--espresso); transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+.hero-cta { display: inline-flex; gap: 24px; align-items: center; font-size: 12px; line-height: 1.5; text-decoration: none; padding: 13px 0; border-bottom: 1px solid var(--caramel); }
+.hero-cta:hover { color: var(--caramel); }
+.hero.is-enhanced .hero-cta { opacity: 0; visibility: hidden; }
+.hero:not(.is-enhanced) .copy { opacity: 1; visibility: visible; }
+.hero:not(.is-enhanced) .cup { width: min(70vw, 130svh); height: auto; left: 73%; top: 53%; transform: translate(-50%, -50%); }
+.hero:not(.is-enhanced) .scroll-cue { display: none; }
+.experience { position: relative; background: #f1e4cf; color: #352014; padding: 110px 7vw 55px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 8vw; row-gap: 58px; }
+.experience:focus, .hero:focus { outline: none; }
+.experience-intro { grid-column: 1 / -1; max-width: 900px; }
+.experience .eyebrow { color: #79512f; }
+h2 { font: normal clamp(46px, 5.4vw, 84px)/1.03 Georgia, serif; letter-spacing: -.05em; margin: 24px 0; }
+.experience-lead { max-width: 520px; font-size: 17px; line-height: 1.8; color: #6c4e38; }
+.experience-visual { margin: 0; min-width: 0; }
+.experience-visual img { display: block; width: 100%; height: 540px; object-fit: cover; object-position: 50% 48%; background: var(--espresso); }
+.experience-visual figcaption { font-size: 10px; letter-spacing: .05em; padding-top: 18px; color: #795b43; }
+.experience-details { align-self: center; }
+.experience-details article { display: flex; gap: 24px; padding: 30px 0; border-top: 1px solid #b69b7f80; }
+.detail-number { font: 11px Arial, sans-serif; color: #79512f; padding-top: 9px; }
+h3 { font: normal 32px/1.2 Georgia, serif; letter-spacing: -.03em; margin: 0 0 14px; }
+.experience-details p { font-size: 14px; line-height: 1.9; color: #6c4e38; margin: 0; max-width: 330px; }
+.back-to-top { grid-column: 1 / -1; justify-self: end; color: #6c4e38; font-size: 12px; text-underline-offset: 6px; display: flex; gap: 20px; }
+.experience a:focus-visible { outline-color: #79512f; }

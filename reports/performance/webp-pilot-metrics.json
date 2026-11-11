@@ -1,0 +1,299 @@
+[
+  {
+    "frame": 1,
+    "quality": 80,
+    "png_bytes": 287257,
+    "webp_bytes": 19890,
+    "psnr_db": 43.46,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 1,
+    "quality": 85,
+    "png_bytes": 287257,
+    "webp_bytes": 24778,
+    "psnr_db": 44.39,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 1,
+    "quality": 90,
+    "png_bytes": 287257,
+    "webp_bytes": 34730,
+    "psnr_db": 46.27,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 21,
+    "quality": 80,
+    "png_bytes": 432723,
+    "webp_bytes": 19514,
+    "psnr_db": 43.19,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 21,
+    "quality": 85,
+    "png_bytes": 432723,
+    "webp_bytes": 24282,
+    "psnr_db": 44.08,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 21,
+    "quality": 90,
+    "png_bytes": 432723,
+    "webp_bytes": 36090,
+    "psnr_db": 45.54,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 31,
+    "quality": 80,
+    "png_bytes": 491099,
+    "webp_bytes": 20372,
+    "psnr_db": 43.03,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 31,
+    "quality": 85,
+    "png_bytes": 491099,
+    "webp_bytes": 25522,
+    "psnr_db": 43.87,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 31,
+    "quality": 90,
+    "png_bytes": 491099,
+    "webp_bytes": 36936,
+    "psnr_db": 45.2,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 41,
+    "quality": 80,
+    "png_bytes": 519686,
+    "webp_bytes": 22524,
+    "psnr_db": 42.56,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 41,
+    "quality": 85,
+    "png_bytes": 519686,
+    "webp_bytes": 27746,
+    "psnr_db": 43.41,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 41,
+    "quality": 90,
+    "png_bytes": 519686,
+    "webp_bytes": 40366,
+    "psnr_db": 44.76,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 80,
+    "quality": 80,
+    "png_bytes": 602659,
+    "webp_bytes": 24638,
+    "psnr_db": 42.31,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 80,
+    "quality": 85,
+    "png_bytes": 602659,
+    "webp_bytes": 30280,
+    "psnr_db": 43.28,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 80,
+    "quality": 90,
+    "png_bytes": 602659,
+    "webp_bytes": 44540,
+    "psnr_db": 44.56,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 120,
+    "quality": 80,
+    "png_bytes": 631646,
+    "webp_bytes": 25984,
+    "psnr_db": 42.33,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 120,
+    "quality": 85,
+    "png_bytes": 631646,
+    "webp_bytes": 31436,
+    "psnr_db": 43.22,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 120,
+    "quality": 90,
+    "png_bytes": 631646,
+    "webp_bytes": 45662,
+    "psnr_db": 44.42,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 160,
+    "quality": 80,
+    "png_bytes": 648524,
+    "webp_bytes": 26370,
+    "psnr_db": 42.2,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 160,
+    "quality": 85,
+    "png_bytes": 648524,
+    "webp_bytes": 32862,
+    "psnr_db": 43.04,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 160,
+    "quality": 90,
+    "png_bytes": 648524,
+    "webp_bytes": 46518,
+    "psnr_db": 44.3,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 201,
+    "quality": 80,
+    "png_bytes": 651389,
+    "webp_bytes": 26250,
+    "psnr_db": 42.17,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 201,
+    "quality": 85,
+    "png_bytes": 651389,
+    "webp_bytes": 32028,
+    "psnr_db": 43.02,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 201,
+    "quality": 90,
+    "png_bytes": 651389,
+    "webp_bytes": 46358,
+    "psnr_db": 44.44,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 239,
+    "quality": 80,
+    "png_bytes": 634195,
+    "webp_bytes": 24702,
+    "psnr_db": 42.57,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 239,
+    "quality": 85,
+    "png_bytes": 634195,
+    "webp_bytes": 31134,
+    "psnr_db": 43.57,
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  {
+    "frame": 239,
+    "quality": 90,
+    "png_bytes": 634195,
+    "webp_bytes": 43450,
+    "psnr_db": 44.75,
+    "dimensions": [
+      1280,
+      720
+    ]
+  }
+]

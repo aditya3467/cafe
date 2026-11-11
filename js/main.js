@@ -1,6 +1,9 @@
 import {mountHero} from './hero-animation.js';
+import {createCinema} from './cinema.js';
 
-mountHero(document.querySelector('#hero'));
+const hero = document.querySelector('#hero');
+const continuation = createCinema(hero, document.querySelector('#ritual'));
+mountHero(hero, {continuation});
 
 // Native section anchors work without JavaScript. With enhancement, preserve
 // focus at the destination as well as its visual scroll position.

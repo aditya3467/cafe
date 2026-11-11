@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#170d08">
+  <meta name="description" content="Cup2Eat — coffee served in edible waffle cups with a chocolate-coated rim.">
+  <title>Cup2Eat — Coffee meets waffle</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/cinema.css">
+  <script defer src="prototype/vendor/gsap.min.js"></script>
+  <script defer src="prototype/vendor/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#experience">Skip to the edible coffee experience</a>
+  <main>
+    <section class="hero" id="hero" aria-label="Cup2Eat — coffee in an edible waffle cup">
+      <div class="environment" aria-hidden="true"></div>
+      <div class="shade" aria-hidden="true"></div>
+      <header class="site-header">
+        <a class="wordmark" href="#hero" aria-label="Cup2Eat home">Cup2Eat</a>
+        <nav aria-label="Main navigation"><a href="#experience">The experience <span aria-hidden="true">↗</span></a></nav>
+      </header>
+      <div class="copy">
+        <p class="eyebrow">COFFEE. CHOCOLATE. WAFFLE.</p>
+        <h1>A cup worth<br>savouring.</h1>
+        <p class="description">Coffee served in an edible waffle cup.<br>Golden texture. A chocolate-coated rim.</p>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="small">Cup2Eat</p>
+        <a class="hero-cta" href="#experience">Discover the edible experience <span aria-hidden="true">↓</span></a>
+      </div>
+      <canvas class="sequence source-layer" width="1280" height="720" aria-hidden="true"></canvas>
+      <img class="cup source-layer" src="assets/derived/hero/cup-empty-registered.png" width="1280" height="720" fetchpriority="high" alt="Golden diamond-pattern edible waffle cup with a glossy chocolate-coated rim.">
+      <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL TO POUR</div>
+      <p class="notice" role="status" aria-live="polite"></p>
+    </section>
+    <section class="cinema" id="ritual" aria-label="Drink it, crack it, eat it">
+      <div class="film-layer" data-scene="sip">
+        <div class="film-heading"><p class="eyebrow">01 / THE COFFEE</p><h2>DRINK IT.</h2></div>
+        <div class="film-window"><video id="sipping-film" src="assets/videos/sipping.mp4" preload="none" muted playsinline controls aria-label="A person finishes the coffee from the waffle cup.">Your browser does not support MP4 playback.</video></div>
+      </div>
+      <div class="film-layer" data-scene="crack">
+        <div class="film-heading"><p class="eyebrow">02 / THE CUP</p><h2>CRACK IT. EAT IT.</h2></div>
+        <div class="film-window"><video id="crack-film" src="assets/videos/crack-eat.mp4" preload="none" muted playsinline controls aria-label="The waffle cup is broken and eaten.">Your browser does not support MP4 playback.</video></div>
+      </div>
+      <div class="brand-reveal" data-scene="brand">
+        <p class="brand-signature">Cup2Eat</p>
+        <h2 aria-label="DRINK IT. CRACK IT. EAT IT."><span>DRINK IT.</span><span>CRACK IT.</span><span>EAT IT.</span></h2>
+        <a class="brand-cta" href="#experience">The edible coffee experience <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="film-controls" hidden>
+        <button type="button" data-film-toggle>Pause film</button>
+        <button type="button" data-film-replay>Replay story <span aria-hidden="true">↺</span></button>
+      </div>
+      <p class="film-status" role="status" aria-live="polite"></p>
+      <div class="scene-occlusion" aria-hidden="true"></div>
+    </section>
+    <section class="experience" id="experience" aria-labelledby="experience-title" tabindex="-1">
+      <div class="experience-intro">
+        <p class="eyebrow">THE CUP IS PART OF THE EXPERIENCE</p>
+        <h2 id="experience-title">The Edible<br>Coffee Experience</h2>
+        <p class="experience-lead">Coffee meets chocolate. Chocolate meets waffle. A familiar ritual, served in a cup you can eat.</p>
+      </div>
+      <figure class="experience-visual">
+        <img src="assets/derived/hero/hero-registered-composite.png" width="1280" height="720" loading="lazy" decoding="async" alt="The empty Cup2Eat waffle cup, showing its golden diamond texture and chocolate-lined rim.">
+        <figcaption>Golden waffle. Glossy chocolate. Cup2Eat.</figcaption>
+      </figure>
+      <div class="experience-details">
+        <article><span class="detail-number" aria-hidden="true">01</span><div><h3>Waffle, as a cup.</h3><p>The edible waffle forms the cup itself, with a golden diamond-pattern texture.</p></div></article>
+        <article><span class="detail-number" aria-hidden="true">02</span><div><h3>A chocolate-coated rim.</h3><p>A glossy chocolate coating follows the rim of the waffle cup.</p></div></article>
+        <article><span class="detail-number" aria-hidden="true">03</span><div><h3>Coffee and a little more.</h3><p>Coffee and an edible cup come together in one experience.</p></div></article>
+      </div>
+      <a class="back-to-top" href="#hero">Back to the cup <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+</body>
+</html>

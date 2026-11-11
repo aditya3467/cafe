@@ -1,0 +1,65 @@
+{
+  "heldRequests": 2,
+  "heldState": {
+    "cinema": {
+      "progress": 0.35999983333333335,
+      "active": "hero",
+      "desired": "sip",
+      "inView": true,
+      "paused": false,
+      "preparing": true,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 0,
+          "duration": 0,
+          "paused": true,
+          "ready": 0,
+          "ended": false
+        },
+        "crack": {
+          "time": 0,
+          "duration": 0,
+          "paused": true,
+          "ready": 0,
+          "ended": false
+        }
+      }
+    },
+    "frame": 239,
+    "canvasOpacity": "1",
+    "visibleFilms": 0,
+    "coverOpacity": "0"
+  },
+  "settled": {
+    "progress": 0.35999983333333335,
+    "active": "sip",
+    "desired": "sip",
+    "inView": true,
+    "paused": false,
+    "preparing": false,
+    "completed": {
+      "sip": false,
+      "crack": false
+    },
+    "videos": {
+      "sip": {
+        "time": 0.220767,
+        "duration": 5.041667,
+        "paused": false,
+        "ready": 4,
+        "ended": false
+      },
+      "crack": {
+        "time": 0,
+        "duration": 8.042667,
+        "paused": true,
+        "ready": 4,
+        "ended": false
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@media (max-width: 700px) {
+  .site-header { padding: 24px; }
+  .wordmark { font-size: 28px; }
+  .site-header nav { font-size: 10px; }
+  .hero { min-height: 600px; }
+  .copy { left: 8vw; top: 123px; width: 84vw; transform: none; }
+  .eyebrow { font-size: 8px; letter-spacing: 2px; }
+  h1 { font-size: 48px; line-height: 1.01; margin: 14px 0 16px; }
+  .description { font-size: 12px; line-height: 1.7; }
+  .rule, .small { display: none; }
+  .scroll-cue { bottom: 88px; }
+  .environment { background-size: auto 100%; background-position: 50% center; }
+  .shade { background: linear-gradient(180deg, #170d0866, transparent 80%); }
+  .hero-cta { font-size: 11px; padding: 9px 0; margin-top: 3px; }
+  .hero:not(.is-enhanced) .cup { width: 160vw; left: 50%; top: 70%; }
+  .experience { padding: 70px 8vw 35px; grid-template-columns: 1fr; gap: 38px; }
+  .experience-intro { grid-column: 1; }
+  h2 { font-size: 46px; margin: 20px 0; }
+  .experience-lead { font-size: 15px; line-height: 1.8; }
+  .experience-visual img { height: 370px; }
+  .experience-details article { padding: 25px 0; gap: 20px; }
+  h3 { font-size: 28px; }
+  .back-to-top { grid-column: 1; margin-top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue { display: none; }
+  .hero { min-height: 600px; }
+  .hero .copy { opacity: 1; visibility: visible; }
+  .hero.is-enhanced .hero-cta { opacity: 1; visibility: visible; }
+}

@@ -1,0 +1,41 @@
+{
+  "prototype_and_asset_files_preserved": 283,
+  "additional_original_pngs_preserved": 239,
+  "total_preserved": 522,
+  "videos": [
+    {
+      "path": "assets/videos/crack-eat.mp4",
+      "bytes": 4350625,
+      "sha256": "f5a9268955f5538a7ce773696a0f669ba425320e201dd746725b0304c232f54c"
+    },
+    {
+      "path": "assets/videos/sipping.mp4",
+      "bytes": 4784161,
+      "sha256": "688a9c7623a38f5d2800037d99d73443a9fada3000b7bfd74099d4fec70b05b3"
+    }
+  ],
+  "hero_regression": {
+    "desktop": {
+      "geometry_unchanged": true,
+      "frame_mapping_unchanged": true,
+      "peak_cache": 18,
+      "handoff_error": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "mobile": {
+      "geometry_unchanged": true,
+      "frame_mapping_unchanged": true,
+      "peak_cache": 18,
+      "handoff_error": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  }
+}

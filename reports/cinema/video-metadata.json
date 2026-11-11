@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sip-first",
+    "width": 1280,
+    "height": 720,
+    "duration": 5.041667,
+    "time": 0,
+    "ready": 4
+  },
+  {
+    "id": "sip-last",
+    "width": 1280,
+    "height": 720,
+    "duration": 5.041667,
+    "time": 4.991667,
+    "ready": 4
+  },
+  {
+    "id": "crack-first",
+    "width": 1280,
+    "height": 720,
+    "duration": 8.042667,
+    "time": 0,
+    "ready": 4
+  }
+]

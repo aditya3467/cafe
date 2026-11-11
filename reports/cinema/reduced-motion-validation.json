@@ -1,0 +1,98 @@
+{
+  "desktop": {
+    "initial": {
+      "pins": 0,
+      "cinemaEnhanced": false,
+      "videos": [
+        {
+          "paused": true,
+          "controls": true
+        },
+        {
+          "paused": true,
+          "controls": true
+        }
+      ],
+      "videoRequests": 0
+    },
+    "manualPlaybackWorks": true,
+    "inactiveManualVideoPaused": true
+  },
+  "mobile": {
+    "initial": {
+      "pins": 0,
+      "cinemaEnhanced": false,
+      "videos": [
+        {
+          "paused": true,
+          "controls": true
+        },
+        {
+          "paused": true,
+          "controls": true
+        }
+      ],
+      "videoRequests": 0
+    },
+    "manualPlaybackWorks": true,
+    "inactiveManualVideoPaused": true
+  },
+  "fastScrollGate": {
+    "progress": 0.9800551666666669,
+    "active": "sip",
+    "desired": "sip",
+    "inView": true,
+    "paused": false,
+    "preparing": false,
+    "completed": {
+      "sip": false,
+      "crack": false
+    },
+    "videos": {
+      "sip": {
+        "time": 0.2173,
+        "duration": 5.041667,
+        "paused": false,
+        "ready": 4,
+        "ended": false
+      },
+      "crack": {
+        "time": 0,
+        "duration": 8.042667,
+        "paused": true,
+        "ready": 4,
+        "ended": false
+      }
+    }
+  },
+  "fastScrollInactive": {
+    "progress": 1,
+    "active": "sip",
+    "desired": "sip",
+    "inView": false,
+    "paused": false,
+    "preparing": false,
+    "completed": {
+      "sip": false,
+      "crack": false
+    },
+    "videos": {
+      "sip": {
+        "time": 0.541567,
+        "duration": 5.041667,
+        "paused": true,
+        "ready": 4,
+        "ended": false
+      },
+      "crack": {
+        "time": 0,
+        "duration": 8.042667,
+        "paused": true,
+        "ready": 4,
+        "ended": false
+      }
+    }
+  },
+  "errors": [],
+  "failedHTTP": []
+}

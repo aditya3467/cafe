@@ -1,12 +1,13 @@
 import {FrameCache} from './frame-cache.js';
 
 // Geometry, phase mapping and cache scheduling preserved from the validated prototype.
-export function mountHero(root) {
+export function mountHero(root, {continuation = null} = {}) {
 if (!root) return null;
 const $=s=>root.querySelector(s), hero=root,cup=$('.cup'),canvas=$('canvas'),ctx=canvas.getContext('2d',{alpha:false});
 const copy=$('.copy'),notice=$('.notice'),cue=$('.scroll-cue'),cta=$('.hero-cta');
 const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));const range=(p,a,b)=>clamp((p-a)/(b-a));
 const smooth=x=>x*x*(3-2*x);const mix=(a,b,t)=>a+(b-a)*t;
+let cinemaProgress=0;
 let progress=0,previous=0,direction=1,requested=1,rendered=0,raf=0,geometry,trigger,disposed=false;
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const cache=new FrameCache(()=>schedule(),(n,error)=>{console.warn(error.message);notice.textContent='The coffee animation is taking a moment. You can still discover the experience below.';schedule();});
@@ -24,7 +25,8 @@ function measure(){
  schedule();
 }
 function schedule(){if(!raf&&!disposed)raf=requestAnimationFrame(update);}
-function transform(el,scale,x,y){gsap.set(el,{x,y,scale});}
+const transforms=new WeakMap();
+function transform(el,scale,x,y){const key=`${scale}:${x}:${y}:${el===canvas?cinemaProgress:0}`;if(transforms.get(el)!==key){gsap.set(el,{x,y,scale});transforms.set(el,key);}}
 function update(){
  raf=0;if(!geometry)return;
  const g=geometry,t=reduced?1:smooth(range(progress,0,.34));
@@ -33,9 +35,9 @@ function update(){
  transform(canvas,g.endScale,g.endCenter.x-648*g.endScale,g.endCenter.y-367.5*g.endScale);
  // No sequence advance until movement and the registered handoff are complete.
  requested=progress<=.48?1:Math.round(1+238*range(progress,.48,.94));
- const bitmap=cache.get(requested);
- if(bitmap&&requested!==rendered){ctx.drawImage(bitmap,0,0,1280,720);rendered=requested;}
- if(!reduced)cache.request(requested,direction,rendered||1);
+ if(!reduced)cache.request(requested,direction,rendered||1,{warm:progress>=.10});
+ const available=cache.resolve(requested,direction,rendered||1);
+ if(available&&available.frame!==rendered){ctx.drawImage(available.bitmap,0,0,1280,720);rendered=available.frame;cache.displayed=rendered;}
  // On reversing out of the pour, require frame 1 before showing the cutout.
  const registered=rendered===1;
  const handoff=smooth(range(progress,.39,.47));
@@ -49,19 +51,22 @@ function update(){
  gsap.set(cta,{autoAlpha:showCta?1:0});cta.tabIndex=showCta?0:-1;
  cta.inert=!showCta;
  gsap.set(cue,{opacity:1-range(progress,0,.08)});
+ if(progress>=.85)continuation?.warm();
+ continuation?.update(cinemaProgress,g,rendered);
  window.cup2eatHero.state={progress,requested,rendered,cache:cache.frames.size,peak:cache.peak,inflight:cache.loading.size,direction,geometry:g,canvasOpacity,cupOpacity,failed:[...cache.failed]};
 }
-window.cup2eatHero={state:{},ready:false,phases:{movement:[0,.34],handoff:[.34,.48],pour:[.48,.94],hold:[.94,1]},scrollTo(p){if(trigger)window.scrollTo(0,trigger.start+clamp(p)*(trigger.end-trigger.start));},refresh(){ScrollTrigger.refresh();},};
+window.cup2eatHero={state:{},ready:false,performance:()=>cache.snapshot(),phases:{movement:[0,.34],handoff:[.34,.48],pour:[.48,.94],hold:[.94,1]},scrollTo(p){if(trigger)window.scrollTo(0,trigger.start+clamp(p)*Math.max(innerHeight*5,3200));},refresh(){ScrollTrigger.refresh();},};
 async function init(){
  if(!window.gsap||!window.ScrollTrigger){notice.textContent='Animation libraries could not load. Static cup preview retained.';return;}
  gsap.registerPlugin(ScrollTrigger);await cup.decode();hero.classList.add('is-enhanced');measure();
  if(!reduced){
   const driver={p:0};
-  gsap.to(driver,{p:1,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:()=>`+=${Math.max(innerHeight*5,3200)}`,pin:true,scrub:.18,invalidateOnRefresh:true,onRefresh:measure},onUpdate(){progress=driver.p;direction=progress===previous?direction:progress>previous?1:-1;previous=progress;schedule();}});
+  gsap.to(driver,{p:1,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:()=>`+=${Math.max(innerHeight*5,3200)+(continuation?.length()||0)}`,pin:true,scrub:.18,invalidateOnRefresh:true,onRefresh:measure},onUpdate(){const base=Math.max(innerHeight*5,3200),extra=continuation?.length()||0,distance=driver.p*(base+extra);progress=clamp(distance/base);cinemaProgress=extra?clamp((distance-base)/extra):0;direction=progress===previous?direction:progress>previous?1:-1;previous=progress;schedule();}});
   trigger=ScrollTrigger.getAll()[0];
  }
  if(!reduced)cache.request(1);schedule();window.cup2eatHero.ready=true;
 }
+hero.addEventListener('cinema-redraw',schedule);
 let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{measure();if(trigger)ScrollTrigger.refresh();},160);});
 
 window.addEventListener('pagehide',event=>{if(event.persisted)return;disposed=true;cancelAnimationFrame(raf);cache.dispose();trigger?.kill();});

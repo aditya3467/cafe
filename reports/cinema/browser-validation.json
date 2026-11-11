@@ -1,0 +1,581 @@
+{
+  "desktop": {
+    "initial": {
+      "hero": {
+        "progress": 0,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": []
+      },
+      "videoRequests": 0,
+      "gsapScripts": 1
+    },
+    "sip": {
+      "progress": 0.35999983333333335,
+      "active": "sip",
+      "desired": "sip",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 2.083372,
+          "duration": 5.041667,
+          "paused": false,
+          "ready": 4,
+          "ended": false
+        },
+        "crack": {
+          "time": 0,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "crack": {
+      "progress": 0.35999983333333335,
+      "active": "crack",
+      "desired": "crack",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": true,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 5.041667,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": true
+        },
+        "crack": {
+          "time": 3.407992,
+          "duration": 8.042667,
+          "paused": false,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "brand": {
+      "progress": 0.35999983333333335,
+      "active": "brand",
+      "desired": "brand",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": true,
+        "crack": true
+      },
+      "videos": {
+        "sip": {
+          "time": 5.041667,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": true
+        },
+        "crack": {
+          "time": 8.042667,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": true
+        }
+      }
+    },
+    "reverseCrack": {
+      "progress": 0.7200005000000002,
+      "active": "crack",
+      "desired": "crack",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": true,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 5.041667,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": true
+        },
+        "crack": {
+          "time": 0.221649,
+          "duration": 8.042667,
+          "paused": false,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "reverseSip": {
+      "progress": 0.3999995,
+      "active": "sip",
+      "desired": "sip",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 0.213191,
+          "duration": 5.041667,
+          "paused": false,
+          "ready": 4,
+          "ended": false
+        },
+        "crack": {
+          "time": 0.508797,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "paused": {
+      "progress": 0.3999995,
+      "active": "sip",
+      "desired": "sip",
+      "inView": true,
+      "paused": true,
+      "preparing": false,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 0.513308,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        },
+        "crack": {
+          "time": 0.508797,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "inactive": {
+      "progress": 1,
+      "active": "sip",
+      "desired": "sip",
+      "inView": false,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 1.34023,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        },
+        "crack": {
+          "time": 0.508797,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "reverse": {
+      "cinema": {
+        "progress": 0.10000016666666667,
+        "active": "hero",
+        "desired": "hero",
+        "inView": true,
+        "paused": false,
+        "preparing": false,
+        "completed": {
+          "sip": false,
+          "crack": false
+        },
+        "videos": {
+          "sip": {
+            "time": 1.441323,
+            "duration": 5.041667,
+            "paused": true,
+            "ready": 4,
+            "ended": false
+          },
+          "crack": {
+            "time": 0.508797,
+            "duration": 8.042667,
+            "paused": true,
+            "ready": 4,
+            "ended": false
+          }
+        }
+      },
+      "canvasOpacity": "1"
+    },
+    "heroReverse": {
+      "progress": 0.6502518000000002,
+      "requested": 89,
+      "rendered": 89,
+      "cache": 18,
+      "peak": 18,
+      "inflight": 3,
+      "direction": -1,
+      "geometry": {
+        "W": 1440,
+        "H": 900,
+        "mobile": false,
+        "initialScale": 1.597911227154047,
+        "endScale": 0.7874999999999999,
+        "startCenter": {
+          "x": 720,
+          "y": 450
+        },
+        "endCenter": {
+          "x": 1058.4,
+          "y": 477
+        }
+      },
+      "canvasOpacity": 1,
+      "cupOpacity": 0,
+      "failed": []
+    },
+    "overflow": false
+  },
+  "mobile": {
+    "initial": {
+      "hero": {
+        "progress": 0,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": []
+      },
+      "videoRequests": 0,
+      "gsapScripts": 1
+    },
+    "sip": {
+      "progress": 0.3599925,
+      "active": "sip",
+      "desired": "sip",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 1.815616,
+          "duration": 5.041667,
+          "paused": false,
+          "ready": 4,
+          "ended": false
+        },
+        "crack": {
+          "time": 0,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "crack": {
+      "progress": 0.3599925,
+      "active": "crack",
+      "desired": "crack",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": true,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 5.041667,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": true
+        },
+        "crack": {
+          "time": 3.138747,
+          "duration": 8.042667,
+          "paused": false,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "brand": {
+      "progress": 0.3599925,
+      "active": "brand",
+      "desired": "brand",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": true,
+        "crack": true
+      },
+      "videos": {
+        "sip": {
+          "time": 5.041667,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": true
+        },
+        "crack": {
+          "time": 8.042667,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": true
+        }
+      }
+    },
+    "reverseCrack": {
+      "progress": 0.719984,
+      "active": "crack",
+      "desired": "crack",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": true,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 5.041667,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": true
+        },
+        "crack": {
+          "time": 0.216839,
+          "duration": 8.042667,
+          "paused": false,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "reverseSip": {
+      "progress": 0.40007833333333337,
+      "active": "sip",
+      "desired": "sip",
+      "inView": true,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 0.208363,
+          "duration": 5.041667,
+          "paused": false,
+          "ready": 4,
+          "ended": false
+        },
+        "crack": {
+          "time": 0.528506,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "paused": {
+      "progress": 0.40007833333333337,
+      "active": "sip",
+      "desired": "sip",
+      "inView": true,
+      "paused": true,
+      "preparing": false,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 0.477328,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        },
+        "crack": {
+          "time": 0.528506,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "inactive": {
+      "progress": 1,
+      "active": "sip",
+      "desired": "sip",
+      "inView": false,
+      "paused": false,
+      "preparing": false,
+      "completed": {
+        "sip": false,
+        "crack": false
+      },
+      "videos": {
+        "sip": {
+          "time": 1.250584,
+          "duration": 5.041667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        },
+        "crack": {
+          "time": 0.528506,
+          "duration": 8.042667,
+          "paused": true,
+          "ready": 4,
+          "ended": false
+        }
+      }
+    },
+    "reverse": {
+      "cinema": {
+        "progress": 0.09992133333333324,
+        "active": "hero",
+        "desired": "hero",
+        "inView": true,
+        "paused": false,
+        "preparing": false,
+        "completed": {
+          "sip": false,
+          "crack": false
+        },
+        "videos": {
+          "sip": {
+            "time": 1.341094,
+            "duration": 5.041667,
+            "paused": true,
+            "ready": 4,
+            "ended": false
+          },
+          "crack": {
+            "time": 0.528506,
+            "duration": 8.042667,
+            "paused": true,
+            "ready": 4,
+            "ended": false
+          }
+        }
+      },
+      "canvasOpacity": "1"
+    },
+    "heroReverse": {
+      "progress": 0.650056,
+      "requested": 89,
+      "rendered": 89,
+      "cache": 18,
+      "peak": 18,
+      "inflight": 3,
+      "direction": -1,
+      "geometry": {
+        "W": 390,
+        "H": 844,
+        "mobile": true,
+        "initialScale": 0.7215,
+        "endScale": 0.4929166666666667,
+        "startCenter": {
+          "x": 195,
+          "y": 422
+        },
+        "endCenter": {
+          "x": 195,
+          "y": 590.8
+        }
+      },
+      "canvasOpacity": 1,
+      "cupOpacity": 0,
+      "failed": []
+    },
+    "overflow": false
+  },
+  "errors": [],
+  "canceledMediaRequests": 4,
+  "failedHTTP": []
+}

@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/aditya3467/cafe",
+  "working_branch": "master",
+  "committed_head": "c780aebb642f282530c8c624be0161c9317c298c",
+  "live_html_matches_head": true,
+  "snapshot_files": {
+    "index.html": "7772b64f7b45379fc23c4794be9673a28663ca01a97f2ecc1f76a6ced1182ad4",
+    "css/responsive.css": "d4dbe745925bb089769a593de07bf299cd9b203e829715dd2de8b103d606fcbe",
+    "css/style.css": "43b4ec01ca666b5f460888b0016eecd5229828f8f0d6bd35eaaa4623da688046",
+    "js/frame-sequence.js": "4407f47d0fc955bdd1abe3f8946776f4c611d2f1ba765c80b60a60c88007cfdd",
+    "js/main.js": "32a5b93845b4594c39a5f3bd533bf1aa8079a15da4f513b6af0e5028992197f7",
+    "js/frame-cache.js": "998d04c5546c07d5370f5669ff9abb591f989533c3e5cc980c076acf9a45fe4f",
+    "js/hero-animation.js": "aa6bc6274e1e840b78e5a8054badf33b157d7d5bb24c660a65c63b4c3c09b470"
+  }
+}
