@@ -1,4 +1,5 @@
-import {getFrameSource} from './frame-sequence.js';
+import * as sequence from './frame-sequence.js?v=hero-pack-v1';
+const getFrameSource=sequence.getFrameSource;
 
 /** Separate, bounded compressed-byte and decoded-pixel caches. */
 export class FrameCache {
@@ -11,7 +12,7 @@ export class FrameCache {
     this.onReady = onReady; this.onError = onError;
     this.frames = new Map(); this.encoded = new Map();
     this.loading = new Map(); this.decoding = new Set(); this.failed = new Set();
-    this.retryAt = new Map(); this.attempts = new Map();
+    this.retryAt = new Map(); this.attempts = new Map(); this.unavailablePacks = new Set();
     this.target = 1; this.displayed = 1; this.direction = 1; this.warm = false;
     this.peak = 0; this.bytes = 0; this.disposed = false; this.velocity = 0;
     this.lastRequestTime = performance.now(); this.lastTarget = 1; this.motion = [];
@@ -72,11 +73,18 @@ export class FrameCache {
       for (let i=1;i<=horizon;i++) compressed.push(this.target+i*this.direction);
       for (let i=1;i<=6;i++) compressed.push(this.target-i*this.direction);
     }
-    this.bytePriority = valid(compressed);
+    if(this.warm && sequence.getFramePack){
+      // Fetch adjacent compressed packs early; keep decoding bounded separately.
+      // Fifteen packs fit inside the compressed-byte budget even on mobile.
+      const ordered=[];
+      for(let n=this.target;n>=1&&n<=239;n+=this.direction)ordered.push(n);
+      for(let n=this.target-this.direction;n>=1&&n<=239;n-=this.direction)ordered.push(n);
+      this.bytePriority=valid([this.target,1,...ordered]);
+    }else this.bytePriority = valid(compressed);
     const wanted = new Set(this.bytePriority);
     for (const [n,entry] of this.loading) {
       // Preserve near-complete transfers; cancel only very young, obsolete work.
-      if (!wanted.has(n) && Math.abs(n-this.target)>80 && !entry.headers && performance.now()-entry.start<100) entry.controller.abort();
+      if (!(entry.pack?.frames.some(([frame])=>wanted.has(frame))||wanted.has(entry.frame)) && Math.abs(entry.frame-this.target)>80 && !entry.headers && performance.now()-entry.start<100) entry.controller.abort();
     }
     this.pump();
   }
@@ -86,9 +94,12 @@ export class FrameCache {
     const now = performance.now();
     for (const n of this.bytePriority) {
       if (this.loading.size >= this.concurrency) break;
-      if (this.encoded.has(n) || this.frames.has(n) || this.loading.has(n) || this.failed.has(n) || (this.retryAt.get(n)||0)>now) continue;
-      const entry = {controller:new AbortController(),start:now,headers:false};
-      this.loading.set(n,entry); this.stats.peakDownloads = Math.max(this.stats.peakDownloads,this.loading.size);
+      let pack=sequence.getFramePack?.(n);
+      if(pack&&this.unavailablePacks.has(pack.index))pack=null;
+      const key=pack?`pack:${pack.index}`:n;
+      if (this.encoded.has(n) || this.frames.has(n) || this.loading.has(key) || this.failed.has(n) || (this.retryAt.get(n)||0)>now) continue;
+      const entry = {controller:new AbortController(),start:now,headers:false,pack,key,frame:n};
+      this.loading.set(key,entry); this.stats.peakDownloads = Math.max(this.stats.peakDownloads,this.loading.size);
       this.download(n,entry);
     }
     for (const n of this.pixelPriority) {
@@ -107,16 +118,31 @@ export class FrameCache {
         if (!response.ok) throw new Error(`Frame ${n}: HTTP ${response.status}`);
         return response.blob();
       };
-      let blob;
-      try {blob = await fetchBlob('webp');}
-      catch(error) {
-        if (error.name === 'AbortError') throw error;
-        this.stats.fallbacks++; blob = await fetchBlob('png');
+      let blob, packed=false;
+      if(entry.pack){
+        try{
+          const response=await fetch(entry.pack.url,{signal:entry.controller.signal});entry.headers=true;
+          if(!response.ok)throw new Error(`Pack HTTP ${response.status}`);
+          blob=await response.blob();
+          if(blob.size!==entry.pack.bytes)throw new Error('Incomplete frame pack');
+          packed=true;
+        }catch(error){if(error.name==='AbortError')throw error;this.unavailablePacks.add(entry.pack.index);this.stats.fallbacks++;}
+      }
+      if(!packed){
+        try {blob = await fetchBlob('webp');}
+        catch(error) {
+          if (error.name === 'AbortError') throw error;
+          this.stats.fallbacks++; blob = await fetchBlob('png');
+        }
       }
       if (this.disposed) return;
       this.stats.downloads++; this.stats.downloadBytes += blob.size;
       this.record(this.stats.fetchMs,performance.now()-entry.start);
-      this.encoded.set(n,blob); this.bytes += blob.size;
+      const frames=packed?entry.pack.frames:[[n,0,blob.size]];
+      for(const [frame,offset,length] of frames){
+        if(this.encoded.has(frame))continue;
+        this.encoded.set(frame,packed?blob.slice(offset,offset+length,'image/webp'):blob);this.bytes+=length;
+      }
       this.trimEncoded(); this.stats.peakEncodedBytes = Math.max(this.stats.peakEncodedBytes,this.bytes);
     } catch(error) {
       if (error.name === 'AbortError') this.stats.aborted++;
@@ -125,7 +151,7 @@ export class FrameCache {
         if (attempts >= 2) {this.failed.add(n); this.onError(n,error);}
         else {this.retryAt.set(n,performance.now()+750);setTimeout(()=>this.plan(),760);}
       }
-    } finally {this.loading.delete(n);this.plan();}
+    } finally {this.loading.delete(entry.key);this.plan();}
   }
 
   async decode(n) {

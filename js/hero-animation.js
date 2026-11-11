@@ -1,4 +1,4 @@
-import {FrameCache} from './frame-cache.js';
+import {FrameCache} from './frame-cache.js?v=hero-pack-v1';
 
 // Geometry, phase mapping and cache scheduling preserved from the validated prototype.
 export function mountHero(root, {continuation = null} = {}) {
@@ -53,7 +53,7 @@ function update(){
  gsap.set(cta,{autoAlpha:showCta?1:0});cta.tabIndex=showCta?0:-1;
  cta.inert=!showCta;
  gsap.set(cue,{opacity:1-range(progress,0,.08)});
- if(progress>=.85)continuation?.warm();
+ if(progress>=.94&&rendered===239)continuation?.warm();
  continuation?.update(cinemaProgress,g,rendered);
  window.cup2eatHero.state={progress,requested,rendered,cache:cache.frames.size,peak:cache.peak,inflight:cache.loading.size,direction,geometry:g,canvasOpacity,cupOpacity,failed:[...cache.failed]};
 }
