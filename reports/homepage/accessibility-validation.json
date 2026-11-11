@@ -1,0 +1,80 @@
+{
+  "desktop": {
+    "state": {
+      "progress": 0,
+      "requested": 1,
+      "rendered": 0,
+      "cache": 0,
+      "peak": 0,
+      "inflight": 0,
+      "direction": 1,
+      "geometry": {
+        "W": 1440,
+        "H": 900,
+        "mobile": false,
+        "initialScale": 1.597911227154047,
+        "endScale": 0.7874999999999999,
+        "startCenter": {
+          "x": 720,
+          "y": 450
+        },
+        "endCenter": {
+          "x": 1058.4,
+          "y": 477
+        }
+      },
+      "canvasOpacity": 0,
+      "cupOpacity": 1,
+      "failed": []
+    },
+    "pins": 0,
+    "framesRequested": 0,
+    "copyVisible": "visible",
+    "ctaVisible": "visible",
+    "ctaInert": false,
+    "overflow": false,
+    "headingCount": 1,
+    "destination": "experience"
+  },
+  "mobile": {
+    "state": {
+      "progress": 0,
+      "requested": 1,
+      "rendered": 0,
+      "cache": 0,
+      "peak": 0,
+      "inflight": 0,
+      "direction": 1,
+      "geometry": {
+        "W": 390,
+        "H": 844,
+        "mobile": true,
+        "initialScale": 0.7215,
+        "endScale": 0.4929166666666667,
+        "startCenter": {
+          "x": 195,
+          "y": 422
+        },
+        "endCenter": {
+          "x": 195,
+          "y": 590.8
+        }
+      },
+      "canvasOpacity": 0,
+      "cupOpacity": 1,
+      "failed": []
+    },
+    "pins": 0,
+    "framesRequested": 0,
+    "copyVisible": "visible",
+    "ctaVisible": "visible",
+    "ctaInert": false,
+    "overflow": false,
+    "headingCount": 1,
+    "destination": "experience"
+  },
+  "skipLinkFocused": true,
+  "keyboardSkipWorks": true,
+  "errors": [],
+  "failedHTTP": []
+}

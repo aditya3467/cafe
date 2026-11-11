@@ -1,0 +1,155 @@
+{
+  "desktop": {
+    "title": "Cup2Eat",
+    "ready": "complete",
+    "image": {
+      "complete": true,
+      "width": 1280,
+      "height": 720
+    },
+    "canvasHidden": true,
+    "background": "rgb(23, 13, 8)",
+    "stageHeight": 900,
+    "visual": {
+      "x": 0,
+      "y": 45,
+      "width": 1440,
+      "height": 810,
+      "top": 45,
+      "right": 1440,
+      "bottom": 855,
+      "left": 0
+    },
+    "overflow": false
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "stageHeight": 844,
+    "visual": {
+      "x": 0,
+      "y": 312.3125,
+      "width": 390,
+      "height": 219.375,
+      "top": 312.3125,
+      "right": 390,
+      "bottom": 531.6875,
+      "left": 0
+    },
+    "overflow": false
+  },
+  "resources": [
+    {
+      "url": "http://127.0.0.1:8000/",
+      "status": 200,
+      "mime": "text/html"
+    },
+    {
+      "url": "http://127.0.0.1:8000/css/responsive.css",
+      "status": 200,
+      "mime": "text/css"
+    },
+    {
+      "url": "http://127.0.0.1:8000/css/style.css",
+      "status": 200,
+      "mime": "text/css"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000001.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/js/main.js",
+      "status": 200,
+      "mime": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:8000/js/hero-animation.js",
+      "status": 200,
+      "mime": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:8000/favicon.ico",
+      "status": 404,
+      "mime": "text/html"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000021.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000041.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000061.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000081.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000101.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000120.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000141.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000161.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000181.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000201.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000221.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:8000/Coffee_pouring_into_waffle_cup_0f483f6d_frames/frame_000239.png",
+      "status": 200,
+      "mime": "image/png"
+    }
+  ],
+  "consoleEvents": [
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "network",
+          "level": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+          "timestamp": 1794395056188.61,
+          "url": "http://127.0.0.1:8000/favicon.ico",
+          "networkRequestId": "2168.11"
+        }
+      }
+    }
+  ]
+}

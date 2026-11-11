@@ -1,0 +1,30 @@
+{
+  "preserved_prototype_files": 26,
+  "preserved_asset_files": 494,
+  "checks": {
+    "desktop": {
+      "geometry_matches_prototype": true,
+      "frame_mapping_matches_prototype": true,
+      "handoff_error_css_px": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "peak_cache": 18,
+      "single_gsap_script": true
+    },
+    "mobile": {
+      "geometry_matches_prototype": true,
+      "frame_mapping_matches_prototype": true,
+      "handoff_error_css_px": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "peak_cache": 18,
+      "single_gsap_script": true
+    }
+  }
+}

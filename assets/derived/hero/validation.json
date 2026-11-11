@@ -1,0 +1,32 @@
+{
+  "original_files_verified_unchanged": 254,
+  "frames_clean_count": 239,
+  "frames_dimensions": [
+    1280,
+    720
+  ],
+  "cup_dimensions": [
+    1280,
+    720
+  ],
+  "cup_alpha_bbox": [
+    448,
+    176,
+    848,
+    559
+  ],
+  "opaque_cup_rgb_identical_to_source": true,
+  "cup_alpha_below_y570": false,
+  "all_clean_frames_identical_outside_logo_mask": true,
+  "logo_changed_pixel_count_min_max": [
+    1234,
+    1254
+  ],
+  "logo_mask_bbox": [
+    1132,
+    572,
+    1188,
+    629
+  ],
+  "notes": "Technical checks do not certify subpixel edge fidelity or temporal inpainting quality."
+}

@@ -1,0 +1,838 @@
+{
+  "desktop": {
+    "initialAudit": {
+      "initialFrames": 6,
+      "gsapScripts": 1,
+      "ctaInert": true
+    },
+    "samples": [
+      {
+        "label": "initial",
+        "progress": 0,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 3,
+        "peak": 3,
+        "inflight": 3,
+        "direction": 1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": [],
+        "scrollY": 0,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 863.5464782714844,
+          "y": 324.8262023925781,
+          "width": 1037.31201171875,
+          "height": 583.488037109375
+        }
+      },
+      {
+        "label": "moving",
+        "progress": 0.2,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": [],
+        "scrollY": 900,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 318.6667785644531,
+          "y": 119.8676986694336,
+          "width": 382.847900390625,
+          "height": 215.35198974609375
+        }
+      },
+      {
+        "label": "aligned",
+        "progress": 0.339291,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": [],
+        "scrollY": 1530,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0.01116943359375,
+          "y": 0.004302978515625,
+          "width": 0.00006103515625,
+          "height": 0
+        }
+      },
+      {
+        "label": "handoff",
+        "progress": 0.428755,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0.5233362117924805,
+        "failed": [],
+        "scrollY": 1935,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "pour-start",
+        "progress": 0.479275,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0,
+        "failed": [],
+        "scrollY": 2160,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "pour",
+        "progress": 0.72,
+        "requested": 125,
+        "rendered": 125,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 3,
+        "direction": 1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0,
+        "failed": [],
+        "scrollY": 3240,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "final",
+        "progress": 0.969552,
+        "requested": 239,
+        "rendered": 239,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0,
+        "failed": [],
+        "scrollY": 4365,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "reverse-pour",
+        "progress": 0.650159,
+        "requested": 89,
+        "rendered": 89,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 3,
+        "direction": -1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0,
+        "failed": [],
+        "scrollY": 2925,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "reverse-handoff",
+        "progress": 0.431114,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 3,
+        "direction": -1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0.4791179002716561,
+        "failed": [],
+        "scrollY": 1935,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "reverse-initial",
+        "progress": 0.000771,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 0,
+        "direction": -1,
+        "geometry": {
+          "W": 1440,
+          "H": 900,
+          "mobile": false,
+          "initialScale": 1.597911227154047,
+          "endScale": 0.7874999999999999,
+          "startCenter": {
+            "x": 720,
+            "y": 450
+          },
+          "endCenter": {
+            "x": 1058.4,
+            "y": 477
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": [],
+        "scrollY": 0,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 863.5331726074219,
+          "y": 324.8211975097656,
+          "width": 1037.31201171875,
+          "height": 583.488037109375
+        }
+      }
+    ],
+    "fastScrubFinal": {
+      "progress": 0.96,
+      "requested": 239,
+      "rendered": 239,
+      "cache": 18,
+      "peak": 18,
+      "inflight": 0,
+      "direction": 1,
+      "geometry": {
+        "W": 1440,
+        "H": 900,
+        "mobile": false,
+        "initialScale": 1.597911227154047,
+        "endScale": 0.7874999999999999,
+        "startCenter": {
+          "x": 720,
+          "y": 450
+        },
+        "endCenter": {
+          "x": 1058.4,
+          "y": 477
+        }
+      },
+      "canvasOpacity": 1,
+      "cupOpacity": 0,
+      "failed": []
+    },
+    "cta": {
+      "visible": "visible",
+      "inert": false
+    },
+    "section": {
+      "top": 0,
+      "height": 1178,
+      "focused": "experience",
+      "overflow": false,
+      "scrollY": 5400
+    }
+  },
+  "mobile": {
+    "initialAudit": {
+      "initialFrames": 6,
+      "gsapScripts": 1,
+      "ctaInert": true
+    },
+    "samples": [
+      {
+        "label": "initial",
+        "progress": 0,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 3,
+        "peak": 3,
+        "inflight": 3,
+        "direction": 1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": [],
+        "scrollY": 0,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 148.12200927734375,
+          "y": 252.80430603027344,
+          "width": 292.60791015625,
+          "height": 164.59194946289062
+        }
+      },
+      {
+        "label": "moving",
+        "progress": 0.2,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": [],
+        "scrollY": 844,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 54.66009521484375,
+          "y": 93.29010009765625,
+          "width": 108.031982421875,
+          "height": 60.76800537109375
+        }
+      },
+      {
+        "label": "aligned",
+        "progress": 0.340048,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 0.0000019189759999994002,
+        "cupOpacity": 1,
+        "failed": [],
+        "scrollY": 1435,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "handoff",
+        "progress": 0.430095,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0.4982187533491209,
+        "failed": [],
+        "scrollY": 1815,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "pour-start",
+        "progress": 0.478428,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 10,
+        "peak": 10,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0,
+        "failed": [],
+        "scrollY": 2026,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "pour",
+        "progress": 0.719905,
+        "requested": 125,
+        "rendered": 125,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 3,
+        "direction": 1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0,
+        "failed": [],
+        "scrollY": 3038,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "final",
+        "progress": 0.96864,
+        "requested": 239,
+        "rendered": 239,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 0,
+        "direction": 1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0,
+        "failed": [],
+        "scrollY": 4093,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "reverse-pour",
+        "progress": 0.65,
+        "requested": 89,
+        "rendered": 89,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 3,
+        "direction": -1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0,
+        "failed": [],
+        "scrollY": 2743,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "reverse-handoff",
+        "progress": 0.431208,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 0,
+        "direction": -1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 1,
+        "cupOpacity": 0.4773568859020002,
+        "failed": [],
+        "scrollY": 1815,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "label": "reverse-initial",
+        "progress": 0.000771,
+        "requested": 1,
+        "rendered": 1,
+        "cache": 18,
+        "peak": 18,
+        "inflight": 0,
+        "direction": -1,
+        "geometry": {
+          "W": 390,
+          "H": 844,
+          "mobile": true,
+          "initialScale": 0.7215,
+          "endScale": 0.4929166666666667,
+          "startCenter": {
+            "x": 195,
+            "y": 422
+          },
+          "endCenter": {
+            "x": 195,
+            "y": 590.8
+          }
+        },
+        "canvasOpacity": 0,
+        "cupOpacity": 1,
+        "failed": [],
+        "scrollY": 0,
+        "heroTop": 0,
+        "overflow": false,
+        "registrationError": {
+          "x": 148.11968994140625,
+          "y": 252.80050659179688,
+          "width": 292.60791015625,
+          "height": 164.59194946289062
+        }
+      }
+    ],
+    "fastScrubFinal": {
+      "progress": 0.959551,
+      "requested": 239,
+      "rendered": 239,
+      "cache": 18,
+      "peak": 18,
+      "inflight": 0,
+      "direction": 1,
+      "geometry": {
+        "W": 390,
+        "H": 844,
+        "mobile": true,
+        "initialScale": 0.7215,
+        "endScale": 0.4929166666666667,
+        "startCenter": {
+          "x": 195,
+          "y": 422
+        },
+        "endCenter": {
+          "x": 195,
+          "y": 590.8
+        }
+      },
+      "canvasOpacity": 1,
+      "cupOpacity": 0,
+      "failed": []
+    },
+    "cta": {
+      "visible": "visible",
+      "inert": false
+    },
+    "section": {
+      "top": 0,
+      "height": 1323,
+      "focused": "experience",
+      "overflow": false,
+      "scrollY": 5064
+    }
+  },
+  "errors": [],
+  "failedHTTP": []
+}
